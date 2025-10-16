@@ -62,7 +62,7 @@ export default function Footer({ age }) {
             <a href="https://hashnode.com/@AbiSde2003" target="_blank" rel="noopener noreferrer" className="hover:underline text-sm text-gray-300">
               Blog on Hashnode
             </a>
-            <a href="https://hashnode.com/@AbiSde2003" className="hover:underline text-sm text-gray-300" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.freeprivacypolicy.com/live/46b400fd-73a0-4b7e-a664-2b485bf5eb8a" className="hover:underline text-sm text-gray-300" target="_blank" rel="noopener noreferrer">
               Privacy Policy
             </a>
             <a href="/about" className="hover:underline text-sm text-gray-300" onClick={handleAboutClick}>
