@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
+.main-component {
+  padding: 30px 30px 10px;
+  background-color: rgb(144, 142, 142);
+  color: white;
+  min-height: calc(100vh - 340px); /* adjust 200px to match your footer height */
+}
+
+.link-to-home{
+  color:rgb(231, 231, 233);
+  font-weight: 400;
+}
+
+.add-ingredient-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  height: 38px;
+  margin-bottom: 1.2rem;
+  margin-top: 1rem;
+}
+
+.add-ingredient-form > input {
+  border-radius: 5px;
+  border: 6px soild #323333;
+  padding: 9px 13px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 1.0);
+  flex-grow: 1;
+  /* then set minwidth and maxwidth, cause flex grow is  */
+  min-width: 150px;
+  max-width: 400px;
+}
+
+.add-ingredient-form > button {
+  font-family: "Inter", sans-serif;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.2rem 1.2rem;
+  transition:  background 0.2s;
+}
+.add-ingredient-form > button:hover {
+  background: rgb(155, 16, 16);
+  color: white;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(107, 107, 107);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  
+}
+
+
+
+.get-receipe-container {
+    background: rgb(140, 140, 140);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.8);
+    max-width: 600px;
+    width: 100%;
+    color: black;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+.get-recipe-container h3 {
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+.get-recipe-container p {
+    color: #64748b;
+    line-height: 1.6;
+}
+.get-receipe-container > button{
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition:  background 0.2s;
+    align-self: flex-start;
+    box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.2)
+}
+.get-receipe-container > button:hover {
+    background-color: #183c8b;
+}
+.suggested-recipe-container{
+  background-color: rgb(109, 109, 109);
+  padding: 0.4rem 1rem;
+  margin-top: 1rem;
+  box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.5)
+}
+.pdf-download-btn{
+  background: #17037a;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition:  background 0.2s;
+  box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.5)
+}
+.pdf-download-btn:hover{
+  background-color: #0f034b;
+}
+.close-btn{
+  background: #7a1b03;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition:  background 0.2s;
+  box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.5)
+}
+.close-btn:hover{
+  background-color: #541302;
+}
+.warning-note {
+  background: #bab298;
+  color: #372a02;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  border-left: 4px solid #ba8d06;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.warning-note::before {
+  content: "⚠️";
+  font-size: 1.2rem;
+}
+@media (min-width: 640px) {
+    .get-recipe-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .get-recipe-container button {
+        align-self: center;
+    }
+}
+#aboutTitle{
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  font-style: "Caudex";
+}
+#chooseTitle{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* loading spinner effect */
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    padding: 40px 20px;
+}
+
+.loading-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #ff6347;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.loading-text {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 500;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.ingredients-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.15s ease;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0.2rem;
+}
+
+.ingredients-list li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ingredients-list li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ingredients-list li span {
+  flex: 1;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: left;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.15s ease;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  color: #ff6b6b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ingredients-list li {
+    padding: 12px 16px;
+  }
+}
