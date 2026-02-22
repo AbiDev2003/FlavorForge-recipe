@@ -87,7 +87,7 @@ graph LR
     A2 --> |returns to webpage| A3
 ```
 
-## 🧑‍💻 What I Learned
+## 🧑‍💻 Key Outcomes
 
 During this project, I gained hands-on experience in both frontend and backend fundamentals:
 
