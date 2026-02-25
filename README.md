@@ -1,7 +1,6 @@
 # 🍳 FlavorForge — Recipe Generator Website
 
-**FlavorForge** is your digital kitchen assistant that helps you turn random ingredients into magical recipes ✨  
-Just add your ingredients, hit **"Create Magic"**, and boom — your AI-powered recipe appears, generated via **Mistral API**!
+**FlavorForge** is your digital kitchen assistant that helps you turn random ingredients into magical recipes. Just add your ingredients, hit **"Create Magic"**, and your AI-powered recipe appears, generated via **Mistral API**!
 
 ---
 
